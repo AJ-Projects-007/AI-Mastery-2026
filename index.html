@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJ Gemstones — Rare Stones, Honestly Sourced</title>
+<meta name="description" content="AJ Gemstones — certified sapphires, rubies, emeralds and rare colour stones, sourced and priced honestly.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="siteHeader">
+  <nav class="container">
+    <a href="#home" class="logo">
+      <span class="logo-mark"></span>
+      <span class="logo-text">AJ <span>Gemstones</span></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-i18n="nav_home" class="active">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+      <li><a href="#products" data-i18n="nav_products">Products</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-switch" id="langSwitch">
+        <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 4 6 4 9s-1.5 6.3-4 9c-2.5-2.7-4-6-4-9s1.5-6.3 4-9z"/></svg>
+          <span id="langCurrent">EN</span>
+        </button>
+        <div class="lang-menu" id="langMenu" role="menu">
+          <button data-lang="en" class="active" role="menuitem">English <span>EN</span></button>
+          <button data-lang="ms" role="menuitem">Bahasa Malaysia <span>MS</span></button>
+          <button data-lang="zh" role="menuitem">中文 <span>ZH</span></button>
+          <button data-lang="ta" role="menuitem">தமிழ் <span>TA</span></button>
+        </div>
+      </div>
+
+      <button class="burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME / HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-inner">
+        <p class="eyebrow" data-i18n="hero_eyebrow">EST. IN MALAYSIA</p>
+        <h1><span data-i18n="hero_title_1">Stones cut</span><br><span class="line2" data-i18n="hero_title_2">from honesty</span></h1>
+        <p data-i18n="hero_subtitle">Every gem we sell is sourced, graded, and priced in the open — no inflated certificates, no guesswork, just the stone in front of you.</p>
+        <a href="#products" class="btn" data-i18n="hero_cta">View the Collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <img src="assests/images.jpg">
+      <div class="about-copy reveal">
+        <p class="eyebrow" data-i18n="about_eyebrow">WHO WE ARE</p>
+        <h2 data-i18n="about_title">Three generations of stone people</h2>
+        <p data-i18n="about_p1">AJ Gemstones started as a single loupe and a notebook of supplier contacts across Sri Lanka, Colombia, and Myanmar. Today we still buy the same way — in person, stone by stone — because a gem's story matters as much as its cut.</p>
+        <p data-i18n="about_p2">We're not a mall counter. Every piece that reaches our shelf has passed through the same three hands: the buyer, the appraiser, and the founder. If we wouldn't gift it to family, we don't sell it.</p>
+
+        <div class="stat-row">
+          <div class="stat"><span class="stat-num" data-i18n="stat1_num">27</span><span class="stat-label" data-i18n="stat1_label">Years sourcing stones</span></div>
+          <div class="stat"><span class="stat-num" data-i18n="stat2_num">1,400+</span><span class="stat-label" data-i18n="stat2_label">Certified gems sold</span></div>
+          <div class="stat"><span class="stat-num" data-i18n="stat3_num">9</span><span class="stat-label" data-i18n="stat3_label">Countries of origin</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="container">
+      <div class="products-head reveal">
+        <div>
+          <p class="eyebrow" data-i18n="products_eyebrow">08 STONES, ONE STANDARD</p>
+          <h2 data-i18n="products_title">The Collection</h2>
+        </div>
+        <p data-i18n="products_subtitle">Prices reflect the stone alone — no setting, no markup theatre. Ask us about custom mounting for any piece.</p>
+      </div>
+
+      <div class="grid" id="productGrid">
+        <!-- Card 1 -->
+        <article class="card reveal">
+          <div class="card-stone s1">
+            <img src="assests/Blue-Sapphire.jpg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod1_origin">Origin: Sri Lanka</p>
+            <h3 class="card-name" data-i18n="prod1_name">Ceylon Blue Sapphire</h3>
+            <p class="card-desc" data-i18n="prod1_desc">Cornflower-blue and untreated, the kind of sapphire that made Ceylon famous.</p>
+            <div class="card-meta">
+              <span class="card-carat">2.4 ct</span>
+              <span class="card-price"><span class="currency">RM</span>4,850</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Ceylon Blue Sapphire')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal">
+          <div class="card-stone s2">
+            <img src="assests/Colombian-Emerald.jpg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod2_origin">Origin: Colombia</p>
+            <h3 class="card-name" data-i18n="prod2_name">Colombian Emerald</h3>
+            <p class="card-desc" data-i18n="prod2_desc">Deep jungle-green with the classic jardin inclusions collectors look for.</p>
+            <div class="card-meta">
+              <span class="card-carat">1.8 ct</span>
+              <span class="card-price"><span class="currency">RM</span>6,200</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Colombian Emerald')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal">
+          <div class="card-stone s3">
+            <img src="assests/Blood Ruby.jpg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod3_origin">Origin: Myanmar</p>
+            <h3 class="card-name" data-i18n="prod3_name">Burmese Pigeon-Blood Ruby</h3>
+            <p class="card-desc" data-i18n="prod3_desc">The rarest red in the trade — vivid, fluorescent, and genuinely scarce.</p>
+            <div class="card-meta">
+              <span class="card-carat">1.5 ct</span>
+              <span class="card-price"><span class="currency">RM</span>12,500</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Burmese Pigeon-Blood Ruby')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card reveal">
+          <div class="card-stone s4">
+            <img src="assests/Tanzanite.jpeg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod4_origin">Origin: Tanzania</p>
+            <h3 class="card-name" data-i18n="prod4_name">Tanzanite</h3>
+            <p class="card-desc" data-i18n="prod4_desc">Violet-blue and found in exactly one place on Earth.</p>
+            <div class="card-meta">
+              <span class="card-carat">3.1 ct</span>
+              <span class="card-price"><span class="currency">RM</span>3,400</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Tanzanite')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card reveal">
+          <div class="card-stone s5">
+            <img src="assests/Alexandrite.jpg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod5_origin">Origin: Mozambique</p>
+            <h3 class="card-name" data-i18n="prod5_name">Alexandrite</h3>
+            <p class="card-desc" data-i18n="prod5_desc">Green in daylight, red under warm light — a colour-change stone rarer than diamond.</p>
+            <div class="card-meta">
+              <span class="card-carat">0.9 ct</span>
+              <span class="card-price"><span class="currency">RM</span>15,800</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Alexandrite')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card reveal">
+          <div class="card-stone s6">
+            <img src="assests/Amethyst.jpeg">
+            <div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod6_origin">Origin: Brazil</p>
+            <h3 class="card-name" data-i18n="prod6_name">Brazilian Amethyst</h3>
+            <p class="card-desc" data-i18n="prod6_desc">Rich purple with excellent clarity, cut for maximum brilliance.</p>
+            <div class="card-meta">
+              <span class="card-carat">5.0 ct</span>
+              <span class="card-price"><span class="currency">RM</span>680</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Brazilian Amethyst')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="card reveal">
+          <div class="card-stone s7">
+            <img src="assests/Citrine.jpeg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod7_origin">Origin: Madagascar</p>
+            <h3 class="card-name" data-i18n="prod7_name">Madagascar Citrine</h3>
+            <p class="card-desc" data-i18n="prod7_desc">Warm honey-gold, a quietly confident everyday stone.</p>
+            <div class="card-meta">
+              <span class="card-carat">4.2 ct</span>
+              <span class="card-price"><span class="currency">RM</span>450</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Madagascar Citrine')">Enquire</button>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card reveal">
+          <div class="card-stone s8">
+            <img src="assests/Aquamarine.jpeg"><div class="sweep"></div></div>
+          <div class="card-body">
+            <p class="card-origin" data-i18n="prod8_origin">Origin: Brazil</p>
+            <h3 class="card-name" data-i18n="prod8_name">Santa Maria Aquamarine</h3>
+            <p class="card-desc" data-i18n="prod8_desc">Named for the mine that produces the purest blue aquamarine known.</p>
+            <div class="card-meta">
+              <span class="card-carat">2.7 ct</span>
+              <span class="card-price"><span class="currency">RM</span>2,150</span>
+            </div>
+            <button class="card-enquire" data-i18n="btn_enquire" onclick="enquireAbout('Santa Maria Aquamarine')">Enquire</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy reveal">
+        <p class="eyebrow" data-i18n="contact_eyebrow">GET IN TOUCH</p>
+        <h2 data-i18n="contact_title">Ask before you buy</h2>
+        <p data-i18n="contact_subtitle">Send us the stone you're curious about — we reply with sourcing notes, certification, and honest pricing.</p>
+
+        <form id="contactForm">
+          <div class="field">
+            <label for="cName" data-i18n="form_name_label">Name</label>
+            <input type="text" id="cName" required data-i18n-placeholder="form_placeholder_name" placeholder="Your full name">
+          </div>
+          <div class="field">
+            <label for="cEmail" data-i18n="form_email_label">Email</label>
+            <input type="email" id="cEmail" required data-i18n-placeholder="form_placeholder_email" placeholder="you@email.com">
+          </div>
+          <div class="field">
+            <label for="cMessage" data-i18n="form_message_label">Message</label>
+            <textarea id="cMessage" required data-i18n-placeholder="form_placeholder_message" placeholder="Tell us which stone caught your eye..."></textarea>
+          </div>
+          <button type="submit" class="btn" style="align-self:flex-start;" data-i18n="form_submit">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+
+      <div class="contact-info reveal">
+        <h3 data-i18n="footer_contact_title">Visit Us</h3>
+        <dl>
+          <div>
+            <dt data-i18n="footer_contact_title">Visit Us</dt>
+            <dd data-i18n="footer_address">Jalan Sultan Ismail, Kuala Lumpur, Malaysia</dd>
+          </div>
+          <div>
+            <dt data-i18n="nav_contact">Contact</dt>
+            <dd>+60 3-1234 5678</dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd>hello@ajgemstones.my</dd>
+          </div>
+          <div>
+            <dt data-i18n="footer_hours">Tue–Sun, 11am – 7pm</dt>
+            <dd data-i18n="footer_hours">Tue–Sun, 11am – 7pm</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo"><span class="logo-mark"></span><span class="logo-text">AJ <span>Gemstones</span></span></div>
+        <p class="footer-tagline" data-i18n="footer_tagline">Rare stones, plainly priced.</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_links_title">Explore</h4>
+        <ul>
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+          <li><a href="#products" data-i18n="nav_products">Products</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_title">Visit Us</h4>
+        <ul>
+          <li data-i18n="footer_address">Jalan Sultan Ismail, Kuala Lumpur, Malaysia</li>
+          <li data-i18n="footer_hours">Tue–Sun, 11am – 7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copyright">© 2026 AJ Gemstones. All rights reserved.</span>
+      <span>Kuala Lumpur, Malaysia</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

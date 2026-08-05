@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVA AI Academy — Master AI. Build the Future.</title>
+  <meta name="description" content="NOVA AI Academy is a premium AI training academy offering courses in Machine Learning, Deep Learning, Generative AI, Prompt Engineering, Computer Vision, NLP and AI Agents. Learn from industry mentors and get placed at top companies." />
+  <meta name="keywords" content="AI academy, machine learning course, deep learning, generative AI, prompt engineering, computer vision, NLP, AI agents, online AI training" />
+  <meta name="theme-color" content="#030712" />
+  <meta property="og:title" content="NOVA AI Academy — Master AI. Build the Future." />
+  <meta property="og:description" content="Premium AI training academy. 150+ courses, industry mentors, 98% placement rate." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== Background particle universe ===================== -->
+  <div class="bg" aria-hidden="true">
+    <canvas id="particle-canvas"></canvas>
+    <div class="bg-glow"></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Custom cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ===================== Navigation ===================== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#hero" class="brand" aria-label="NOVA AI Academy — home">
+        <img src="assets/logo.svg" alt="" width="40" height="40" />
+        <span class="brand-name">NOVA<span class="brand-accent">AI</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Primary">
+        <a href="#hero" class="nav-link is-active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#why" class="nav-link">Why Us</a>
+        <a href="#testimonials" class="nav-link">Stories</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Book Free Demo</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== Hero ===================== -->
+    <section class="hero section" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <span class="hero-badge">
+            <span class="pulse-dot"></span>
+            Admissions Open · Spring 2026 Cohort
+          </span>
+          <h1 class="hero-title">
+            Master AI.<br />
+            <span class="gradient-text">Build the Future.</span>
+          </h1>
+          <p class="hero-subtitle">
+            NOVA AI Academy is the premium training ground for the next generation of
+            AI engineers. Learn from industry mentors, ship real-world projects, and
+            launch a career at the world's most ambitious companies.
+          </p>
+          <div class="hero-actions">
+            <a href="#courses" class="btn btn-primary btn-lg magnetic">
+              Explore Courses
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost btn-lg magnetic">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+              Book Free Demo
+            </a>
+          </div>
+
+          <!-- Animated statistics -->
+          <div class="hero-stats" role="list">
+            <div class="stat reveal" role="listitem">
+              <span class="stat-value" data-count="10000" data-suffix="+">0</span>
+              <span class="stat-label">Students</span>
+            </div>
+            <div class="stat reveal" role="listitem">
+              <span class="stat-value" data-count="150" data-suffix="+">0</span>
+              <span class="stat-label">Courses</span>
+            </div>
+            <div class="stat reveal" role="listitem">
+              <span class="stat-value" data-count="98" data-suffix="%">0</span>
+              <span class="stat-label">Placement</span>
+            </div>
+            <div class="stat reveal" role="listitem">
+              <span class="stat-value" data-count="40" data-suffix="+">0</span>
+              <span class="stat-label">Industry Mentors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating glass cards -->
+      <div class="float-card float-card-1 glass" aria-hidden="true">
+        <span class="fc-icon">🏆</span>
+        <div>
+          <strong>98% Placement</strong>
+          <small>Top-tier offers</small>
+        </div>
+      </div>
+      <div class="float-card float-card-2 glass" aria-hidden="true">
+        <span class="fc-icon">⚡</span>
+        <div>
+          <strong>Live Mentorship</strong>
+          <small>24/7 expert support</small>
+        </div>
+      </div>
+      <div class="float-card float-card-3 glass" aria-hidden="true">
+        <span class="fc-icon">🎓</span>
+        <div>
+          <strong>Verified Certificates</strong>
+          <small>Industry recognized</small>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+        <span class="mouse"><span class="wheel"></span></span>
+        <span class="scroll-hint-text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ===================== About ===================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">About Us</span>
+          <h2 class="section-title">Where Vision Meets <span class="gradient-text">Intelligence</span></h2>
+          <p class="section-subtitle">
+            We built NOVA to close the gap between theoretical AI and the real world.
+            Our academy blends rigorous curriculum with hands-on industry practice.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              Founded in 2019, NOVA AI Academy has grown from a small classroom of 20
+              curious minds into a global community of 10,000+ learners. Our mission is
+              simple: make world-class AI education accessible, practical, and
+              career-ready.
+            </p>
+            <div class="about-cards">
+              <div class="mini-card glass">
+                <span class="mini-card-icon">🎯</span>
+                <h3>Our Mission</h3>
+                <p>Empower every learner to master AI through project-driven, mentor-led education.</p>
+              </div>
+              <div class="mini-card glass">
+                <span class="mini-card-icon">🔭</span>
+                <h3>Our Vision</h3>
+                <p>A world where breakthrough AI is built by a diverse, globally trained generation of engineers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neural network illustration -->
+          <div class="about-art reveal" aria-hidden="true">
+            <svg viewBox="0 0 420 380" fill="none" class="neural-art">
+              <defs>
+                <linearGradient id="artg" x1="0" y1="0" x2="420" y2="380" gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#4F9DFF"/><stop offset="1" stop-color="#7CC8FF"/>
+                </linearGradient>
+              </defs>
+              <g stroke="url(#artg)" stroke-opacity="0.35" stroke-width="1.2">
+                <line x1="120" y1="80" x2="210" y2="170"/><line x1="120" y1="80" x2="300" y2="150"/>
+                <line x1="120" y1="80" x2="180" y2="290"/><line x1="210" y1="170" x2="300" y2="150"/>
+                <line x1="210" y1="170" x2="180" y2="290"/><line x1="210" y1="170" x2="330" y2="280"/>
+                <line x1="300" y1="150" x2="330" y2="280"/><line x1="180" y1="290" x2="330" y2="280"/>
+                <line x1="120" y1="80" x2="330" y2="280" stroke-dasharray="4 6"/>
+              </g>
+              <g fill="url(#artg)">
+                <circle cx="120" cy="80" r="9"/><circle cx="210" cy="170" r="9"/>
+                <circle cx="300" cy="150" r="9"/><circle cx="180" cy="290" r="9"/>
+                <circle cx="330" cy="280" r="9"/>
+              </g>
+              <g fill="#fff">
+                <circle cx="210" cy="170" r="3.5"/><circle cx="120" cy="80" r="3.5"/>
+                <circle cx="300" cy="150" r="3.5"/><circle cx="180" cy="290" r="3.5"/><circle cx="330" cy="280" r="3.5"/>
+              </g>
+              <g fill="url(#artg)" fill-opacity="0.55">
+                <circle cx="166" cy="126" r="4"/><circle cx="252" cy="164" r="4"/>
+                <circle cx="196" cy="232" r="4"/><circle cx="318" cy="212" r="4"/>
+              </g>
+            </svg>
+            <div class="art-chip glass">
+              <span class="pulse-dot"></span>
+              <div><strong>Model training</strong><small>Loss: 0.0012 · Epoch 42</small></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated timeline -->
+        <div class="timeline reveal">
+          <div class="timeline-line"></div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card glass"><span class="timeline-year">2019</span>
+              <h3>Founded</h3><p>NOVA opens with 20 students and a bold idea: AI education built for the real world.</p></div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card glass"><span class="timeline-year">2021</span>
+              <h3>1,000+ Learners</h3><p>Machine Learning and Deep Learning tracks launch; the community crosses 1,000 students.</p></div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card glass"><span class="timeline-year">2023</span>
+              <h3>Generative AI Era</h3><p>Generative AI, Prompt Engineering and AI Agents curricula introduced to 5,000+ learners.</p></div>
+          </div>
+          <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card glass"><span class="timeline-year">2025</span>
+              <h3>Going Global</h3><p>10,000+ students across 40+ countries, 150+ courses, and a 98% placement rate.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Courses ===================== -->
+    <section class="courses section" id="courses">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Courses</span>
+          <h2 class="section-title">Curated Tracks, Built for <span class="gradient-text">Impact</span></h2>
+          <p class="section-subtitle">
+            From your first line of Python to deploying production AI agents — every
+            track is project-first and mentor-reviewed.
+          </p>
+        </div>
+
+        <div class="courses-grid">
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">🧠</div>
+            <h3 class="course-title">AI Fundamentals</h3>
+            <p class="course-desc">Master core AI concepts, Python, data literacy and the mathematical foundations.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>6 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Beginner</span>
+              <span class="rating" aria-label="Rated 4.8 out of 5">★★★★★ <small>4.8</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="AI Fundamentals">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">⚙️</div>
+            <h3 class="course-title">Machine Learning</h3>
+            <p class="course-desc">Supervised &amp; unsupervised learning, feature engineering, and model evaluation.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>8 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Beginner</span>
+              <span class="rating" aria-label="Rated 4.9 out of 5">★★★★★ <small>4.9</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="Machine Learning">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">🧬</div>
+            <h3 class="course-title">Deep Learning</h3>
+            <p class="course-desc">Neural networks, backpropagation, CNNs, RNNs, transformers and GPU training.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>10 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Intermediate</span>
+              <span class="rating" aria-label="Rated 4.9 out of 5">★★★★★ <small>4.9</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="Deep Learning">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">✨</div>
+            <h3 class="course-title">Generative AI</h3>
+            <p class="course-desc">Build with LLMs, diffusion models, RAG pipelines, fine-tuning and AI product design.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>8 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Intermediate</span>
+              <span class="rating" aria-label="Rated 4.9 out of 5">★★★★★ <small>4.9</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="Generative AI">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">💬</div>
+            <h3 class="course-title">Prompt Engineering</h3>
+            <p class="course-desc">Design reliable prompts, structured outputs, and evaluation harnesses for LLMs.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>4 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Beginner</span>
+              <span class="rating" aria-label="Rated 4.8 out of 5">★★★★★ <small>4.8</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="Prompt Engineering">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">👁️</div>
+            <h3 class="course-title">Computer Vision</h3>
+            <p class="course-desc">Image classification, object detection, segmentation and real-time vision systems.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>10 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Intermediate</span>
+              <span class="rating" aria-label="Rated 4.8 out of 5">★★★★★ <small>4.8</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="Computer Vision">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">🗣️</div>
+            <h3 class="course-title">Natural Language Processing</h3>
+            <p class="course-desc">Tokenization, embeddings, transformers, sentiment analysis and LLM fine-tuning.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>8 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Intermediate</span>
+              <span class="rating" aria-label="Rated 4.8 out of 5">★★★★★ <small>4.8</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="Natural Language Processing">Enroll Now</button>
+          </article>
+
+          <article class="course-card glass reveal">
+            <div class="course-icon">🤖</div>
+            <h3 class="course-title">AI Agents</h3>
+            <p class="course-desc">Build autonomous agents with tool use, memory, planning and multi-agent systems.</p>
+            <div class="course-meta">
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>12 Weeks</span>
+              <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>Advanced</span>
+              <span class="rating" aria-label="Rated 4.9 out of 5">★★★★★ <small>4.9</small></span>
+            </div>
+            <button class="btn btn-outline btn-block enroll-btn" data-course="AI Agents">Enroll Now</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Why Choose Us ===================== -->
+    <section class="why section" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Why Choose Us</span>
+          <h2 class="section-title">An Academy Engineered for <span class="gradient-text">Your Growth</span></h2>
+          <p class="section-subtitle">
+            Everything we do is designed around one outcome — your career in AI.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card glass reveal">
+            <span class="why-icon">🟢</span>
+            <h3>Live Classes</h3>
+            <p>Interactive sessions with real-time Q&amp;A, code-alongs and breakout labs.</p>
+          </div>
+          <div class="why-card glass reveal">
+            <span class="why-icon">📦</span>
+            <h3>Industry Projects</h3>
+            <p>Ship production-grade projects that become the core of your portfolio.</p>
+          </div>
+          <div class="why-card glass reveal">
+            <span class="why-icon">🚀</span>
+            <h3>Placement Assistance</h3>
+            <p>Resume reviews, mock interviews and referrals to 200+ hiring partners.</p>
+          </div>
+          <div class="why-card glass reveal">
+            <span class="why-icon">🏅</span>
+            <h3>Certifications</h3>
+            <p>Verified, shareable certificates recognized by leading AI companies.</p>
+          </div>
+          <div class="why-card glass reveal">
+            <span class="why-icon">🧑‍🏫</span>
+            <h3>Expert Mentors</h3>
+            <p>Learn directly from engineers at OpenAI, Google DeepMind and NVIDIA.</p>
+          </div>
+          <div class="why-card glass reveal">
+            <span class="why-icon">♾️</span>
+            <h3>Lifetime Access</h3>
+            <p>Every course is yours forever, including all future curriculum updates.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Testimonials ===================== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Student Stories</span>
+          <h2 class="section-title">Loved by <span class="gradient-text">10,000+ Learners</span></h2>
+        </div>
+
+        <div class="carousel reveal" id="carousel">
+          <div class="carousel-viewport" id="carousel-viewport">
+            <div class="carousel-track" id="carousel-track">
+
+              <figure class="t-card glass">
+                <div class="t-quote">“</div>
+                <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  The Generative AI track changed my career. Eight weeks after graduating
+                  I joined a fintech startup as an ML Engineer — my salary tripled.
+                </blockquote>
+                <figcaption>
+                  <span class="avatar" style="--av: linear-gradient(135deg,#4F9DFF,#7CC8FF)">SM</span>
+                  <span class="t-person"><strong>Sarah Mitchell</strong><small>ML Engineer · Fintech</small></span>
+                </figcaption>
+              </figure>
+
+              <figure class="t-card glass">
+                <div class="t-quote">“</div>
+                <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  The mentors are world-class. My AI Agents project got me noticed by a
+                  robotics lab, and now I lead their perception team.
+                </blockquote>
+                <figcaption>
+                  <span class="avatar" style="--av: linear-gradient(135deg,#7CC8FF,#4F9DFF)">RK</span>
+                  <span class="t-person"><strong>Rahul Kapoor</strong><small>Computer Vision Lead · Robotics</small></span>
+                </figcaption>
+              </figure>
+
+              <figure class="t-card glass">
+                <div class="t-quote">“</div>
+                <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  I came from a non-tech background. The AI Fundamentals path was so
+                  well structured that I shipped my first model in under a month.
+                </blockquote>
+                <figcaption>
+                  <span class="avatar" style="--av: linear-gradient(135deg,#3B82F6,#22D3EE)">EL</span>
+                  <span class="t-person"><strong>Emma Lawson</strong><small>Data Analyst · E-commerce</small></span>
+                </figcaption>
+              </figure>
+
+              <figure class="t-card glass">
+                <div class="t-quote">“</div>
+                <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  Placement assistance was genuinely hands-on — mock interviews every
+                  week until I was ready. I signed with a FAANG-adjacent company.
+                </blockquote>
+                <figcaption>
+                  <span class="avatar" style="--av: linear-gradient(135deg,#8B5CF6,#4F9DFF)">DN</span>
+                  <span class="t-person"><strong>Diego Navarro</strong><small>Data Scientist · Big Tech</small></span>
+                </figcaption>
+              </figure>
+
+              <figure class="t-card glass">
+                <div class="t-quote">“</div>
+                <div class="t-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <blockquote>
+                  The lifetime access is real — when new LLM techniques dropped, the
+                  course updated and I learned them for free. That's rare.
+                </blockquote>
+                <figcaption>
+                  <span class="avatar" style="--av: linear-gradient(135deg,#F472B6,#7CC8FF)">AO</span>
+                  <span class="t-person"><strong>Aisha Okafor</strong><small>AI Product Manager</small></span>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-arrow" id="carousel-prev" aria-label="Previous testimonial">←</button>
+            <div class="carousel-dots" id="carousel-dots" role="group" aria-label="Choose testimonial"></div>
+            <button class="carousel-arrow" id="carousel-next" aria-label="Next testimonial">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Contact ===================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Contact</span>
+          <h2 class="section-title">Start Your AI Journey <span class="gradient-text">Today</span></h2>
+          <p class="section-subtitle">
+            Book a free demo, ask a question, or just say hello — we reply within 24 hours.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-card glass">
+              <span class="info-icon">✉️</span>
+              <div><h3>Email</h3><a href="mailto:hello@novaai.academy">hello@novaai.academy</a></div>
+            </div>
+            <div class="info-card glass">
+              <span class="info-icon">📞</span>
+              <div><h3>Phone</h3><a href="tel:+15551234567">+1 (555) 123-4567</a></div>
+            </div>
+            <div class="info-card glass">
+              <span class="info-icon">📍</span>
+              <div><h3>Campus</h3><p>1 Innovation Drive, San Francisco, CA</p></div>
+            </div>
+
+            <div class="map-card glass">
+              <div class="map-grid" aria-hidden="true"></div>
+              <span class="map-pin" aria-hidden="true">📍</span>
+              <div class="map-overlay">
+                <strong>Our Campus</strong>
+                <a href="https://maps.google.com/?q=San+Francisco,+CA" target="_blank" rel="noopener noreferrer">Open in Google Maps →</a>
+              </div>
+            </div>
+
+            <div class="socials" aria-label="Social media">
+              <a href="#" class="social-link" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.5 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.8H5.3L17.8 20z"/></svg></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14.8H.2V8zm7.6 0h4.4v2h.1c.6-1.2 2.1-2.4 4.4-2.4 4.7 0 5.6 3.1 5.6 7.1v8.1h-4.6v-7.2c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8v7.3H7.8V8z"/></svg></a>
+              <a href="#" class="social-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.9 18.3 5.2 18.3 5.2c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+              <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal" id="contact-form" novalidate>
+            <h3>Send us a message</h3>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Full Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Alex Chen" autocomplete="name" required />
+              </div>
+              <div class="form-field">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" name="email" placeholder="alex@example.com" autocomplete="email" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label for="cf-phone">Phone <span class="opt">(optional)</span></label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
+            </div>
+            <div class="form-field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your goals and experience level..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg magnetic">
+              Send Message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/><path d="M22 2 11 13"/></svg>
+            </button>
+            <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="brand" aria-label="NOVA AI Academy — back to top">
+          <img src="assets/logo.svg" alt="" width="40" height="40" />
+          <span class="brand-name">NOVA<span class="brand-accent">AI</span></span>
+        </a>
+        <p>
+          Premium AI training academy. Master AI, build the future, and join a global
+          community of builders.
+        </p>
+        <div class="socials" aria-label="Social media">
+          <a href="#" class="social-link" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.3l7.3-8.3L2.5 2h6.4l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.8H5.3L17.8 20z"/></svg></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14.8H.2V8zm7.6 0h4.4v2h.1c.6-1.2 2.1-2.4 4.4-2.4 4.7 0 5.6 3.1 5.6 7.1v8.1h-4.6v-7.2c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8v7.3H7.8V8z"/></svg></a>
+          <a href="#" class="social-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.9 18.3 5.2 18.3 5.2c.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+          <a href="#" class="social-link" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.2 31.2 0 0 0 0 12a31.2 31.2 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 24 12a31.2 31.2 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Quick links">
+        <h3>Quick Links</h3>
+        <a href="#about">About Us</a>
+        <a href="#courses">Courses</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#testimonials">Student Stories</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Courses">
+        <h3>Top Courses</h3>
+        <a href="#courses">Generative AI</a>
+        <a href="#courses">Machine Learning</a>
+        <a href="#courses">Deep Learning</a>
+        <a href="#courses">Prompt Engineering</a>
+        <a href="#courses">AI Agents</a>
+      </nav>
+
+      <div class="footer-col footer-news">
+        <h3>Newsletter</h3>
+        <p>Get weekly AI insights, course drops and career tips. No spam, ever.</p>
+        <form class="news-form" id="news-form" novalidate>
+          <label class="sr-only" for="news-email">Email address</label>
+          <input type="email" id="news-email" placeholder="you@example.com" autocomplete="email" required />
+          <button type="submit" class="btn btn-primary btn-sm" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>© <span id="year">2026</span> NOVA AI Academy. All rights reserved.</p>
+      <p><a href="#">Privacy Policy</a> · <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+
+  <script src="js/particles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
